@@ -9,27 +9,33 @@
     <style>
       body {
         color: #666666;
-        background-color: #FFF4E3;
+        background-color: #FDC56A;
+        background-position: center;
+        margin: 0px;
         font-family: 'Indie Flower', cursive; 
-        margin: 0;
         text-align: center;
       }
-
       .wrapper {
-        padding: 20px;
+        background-color: #FFF4E3;
+        width: 92%;              
         max-width: 1200px;
-        margin: 0 auto;
+        height: 1200px;
+        margin: 20px auto;       
+        padding: 20px;           
+        border-radius: 10px; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
 
       /* Header section */
       header h1 {
-        font-size: 2.5em;
+        font-size: 2em;
         margin: 10px 0;
       }
 
       .italianno {
         font-family: 'Italianno', cursive;
-        font-size: 4em;
+        font-size: 8em;
+        font-weight: 300;
         margin: 0;
       }
 
@@ -43,11 +49,14 @@
       nav a {
         text-decoration: none;
         color: #333;
-        font-size: 1em;
+        font-size: 1.2em;
         padding: 10px 20px;
-        border: 1px solid #333;
         margin: 0 5px;
-        border-radius: 5px;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #CA8618;
       }
 
       /* Introduction */
@@ -66,6 +75,16 @@
         font-size: 1.5em;
         margin: 30px 0 10px;
         font-weight: bold;
+      }
+
+      /* Section separator */
+      .section-separator {
+        width: 90%;
+        margin: 20px auto;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        height: 10px;
+        background-color: transparent;
       }
 
       /* Hobbies and Contact Me sections */
@@ -96,7 +115,6 @@
         <h1 class="italianno">Portfolio</h1>
       </header>
       
-      <!-- Navigation -->
       <nav>
         <a href="#">Illustrations</a>
         <a href="#">UI Design</a>
@@ -106,19 +124,20 @@
       
       <!-- Introduction -->
       <section class="introduction">
+        <div class="section-separator"></div>
         <p>
-          Hello! My name is Oyedolapo Ajiboye, but you can call me Dolapo. 
+          Hello! <br> My name is Oyedolapo Ajiboye, but you can call me Dolapo. 
           I'm a second-year University of Waterloo student studying Global Business and Digital Arts (GBDA). 
           I'm passionate about illustration and graphic design, and always ready to work with others with similar interests.
           Welcome to my portfolio.
         </p>
+        <div class="section-separator"></div>
       </section>
       
-      <hr />
-
       <!-- Hobbies Section -->
       <section>
         <h2 class="section-title">Hobbies</h2>
+        <div class="section-separator"></div>
         <div class="hobbies">
           <div>
             <img src="spraycan.png" alt="Drawing">
@@ -133,13 +152,13 @@
             <p>Skateboard</p>
           </div>
         </div>
+        <div class="section-separator"></div>
       </section>
-
-      <hr />
 
       <!-- Contact Me Section -->
       <section>
         <h2 class="section-title">Contact Me</h2>
+        <div class="section-separator"></div>
         <div class="contact-me">
           <div>
             <img src="email.png" alt="Email">
@@ -154,6 +173,7 @@
             <p>oyeD18</p>
           </div>
         </div>
+        <div class="section-separator"></div>
       </section>
     </div>
   </body>
