@@ -1,42 +1,160 @@
 <!DOCTYPE html>
-<html lang="eng-CA">
+<html lang="en-CA">
   <head>
     <meta charset="utf-8">
-    <title>The Gallery</title>
-    <!-- Created by Dolapo Ajiboye on the 06/12/2024 -->
+    <title>The Gallery2</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Italianno&display=swap" rel="stylesheet">
     
     <style>
       body {
         color: #666666;
-        background-color: #FDC56A;
-        background-position: center;
-        margin: 0px;
-      }
-      .wrapper {
         background-color: #FFF4E3;
-        width: 92%;              
-        max-width: 1200px;
-        height: 1200px;
-        margin: 20px auto;       
-        padding: 20px;           /* Adds space inside the wrapper */
-        border-radius: 10px;     /* Rounded corners */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        font-family: 'Indie Flower', cursive; 
+        margin: 0;
+        text-align: center;
       }
-      
+
+      .wrapper {
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      /* Header section */
+      header h1 {
+        font-size: 2.5em;
+        margin: 10px 0;
+      }
+
+      .italianno {
+        font-family: 'Italianno', cursive;
+        font-size: 4em;
+        margin: 0;
+      }
+
+      /* Navigation bar */
+      nav {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1em;
+        padding: 10px 20px;
+        border: 1px solid #333;
+        margin: 0 5px;
+        border-radius: 5px;
+      }
+
+      /* Introduction */
+      .introduction {
+        margin: 40px 0;
+      }
+
+      .introduction p {
+        font-size: 1.2em;
+        line-height: 1.6em;
+        margin: 0 20px;
+      }
+
+      /* Section titles */
+      .section-title {
+        font-size: 1.5em;
+        margin: 30px 0 10px;
+        font-weight: bold;
+      }
+
+      /* Hobbies and Contact Me sections */
+      .hobbies, .contact-me {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+
+      .hobbies div, .contact-me div {
+        text-align: center;
+        margin: 10px;
+      }
+
+      .hobbies img, .contact-me img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+      }
     </style>
   </head>
   <body>
     <div class="wrapper">
-      <h1>Welcome to The Gallery</h1>
-      <p>This is a beautiful container for your content, styled with a soft light beige background.</p>
-    </div>
+      <!-- Header -->
+      <header>
+        <h1>Dolapo Ajiboye</h1>
+        <h1 class="italianno">Portfolio</h1>
+      </header>
       
+      <!-- Navigation -->
+      <nav>
+        <a href="#">Illustrations</a>
+        <a href="#">UI Design</a>
+        <a href="#">3D Modelling</a>
+        <a href="#">Animations</a>
+      </nav>
       
-  </body>
-  
-  
-  </html>
+      <!-- Introduction -->
+      <section class="introduction">
+        <p>
+          Hello! My name is Oyedolapo Ajiboye, but you can call me Dolapo. 
+          I'm a second-year University of Waterloo student studying Global Business and Digital Arts (GBDA). 
+          I'm passionate about illustration and graphic design, and always ready to work with others with similar interests.
+          Welcome to my portfolio.
+        </p>
+      </section>
+      
+      <hr />
 
- 
-    
-  
+      <!-- Hobbies Section -->
+      <section>
+        <h2 class="section-title">Hobbies</h2>
+        <div class="hobbies">
+          <div>
+            <img src="spraycan.png" alt="Drawing">
+            <p>Draw</p>
+          </div>
+          <div>
+            <img src="game.png" alt="Gaming">
+            <p>Game</p>
+          </div>
+          <div>
+            <img src="skateboard.png" alt="Skateboarding">
+            <p>Skateboard</p>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Contact Me Section -->
+      <section>
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-me">
+          <div>
+            <img src="email.png" alt="Email">
+            <p>dajiboye@gmail.com</p>
+          </div>
+          <div>
+            <img src="instagram.png" alt="Instagram">
+            <p>oyedolapoajiboye</p>
+          </div>
+          <div>
+            <img src="linkedin.png" alt="LinkedIn">
+            <p>oyeD18</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
