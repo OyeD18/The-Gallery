@@ -5,30 +5,31 @@
     <title>The Gallery2</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Italianno&display=swap" rel="stylesheet">
-    
     <style>
       body {
         color: #666666;
         background-color: #FDC56A;
         background-position: center;
         margin: 0px;
-        font-family: 'Indie Flower', cursive; 
+        font-family: 'Indie Flower', cursive;
         text-align: center;
       }
       .wrapper {
         background-color: #FFF4E3;
-        width: 92%;              
+        width: 92%;
         max-width: 1200px;
-        height: 1200px;
-        margin: 20px auto;       
-        padding: 20px;           
-        border-radius: 10px; 
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
 
-      /* Header section */
-      header h1 {
-        font-size: 2em;
+      #header {
+        height: auto;
+        background-color: #FFF4E3;
+      }
+
+      h1 {
         margin: 10px 0;
       }
 
@@ -40,23 +41,31 @@
       }
 
       /* Navigation bar */
-      nav {
+      #nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
         display: flex;
         justify-content: center;
-        margin: 20px 0;
+        background-color: #FFFFFF;
       }
 
-      nav a {
+      #nav li {
+        margin: 0 20px;
+      }
+
+      #nav a {
         text-decoration: none;
-        color: #333;
+        color: #000000;
         font-size: 1.2em;
+        
         padding: 10px 20px;
-        margin: 0 5px;
+        display: block;
         transition: color 0.3s ease;
       }
 
-      nav a:hover {
-        color: #CA8618;
+      #nav a:hover {
+        color: #FDC56A;
       }
 
       /* Introduction */
@@ -107,17 +116,18 @@
   <body>
     <div class="wrapper">
       <!-- Header -->
-      <header>
+      <div id="header">
         <h1>Dolapo Ajiboye</h1>
         <h1 class="italianno">Portfolio</h1>
-      </header>
-      
-      <nav>
-        <a href="#">Illustrations</a>
-        <a href="#">UI Design</a>
-        <a href="#">3D Modelling</a>
-        <a href="#">Animations</a>
-      </nav>
+        <div id="nav">
+          <ul>
+            <li><a href="#">Illustrations</a></li>
+            <li><a href="#">UI Design</a></li>
+            <li><a href="#">3D Modelling</a></li>
+            <li><a href="#">Animations</a></li>
+          </ul>
+        </div>
+      </div>
       
       <!-- Introduction -->
       <section class="introduction">
