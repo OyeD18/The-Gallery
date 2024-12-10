@@ -60,7 +60,6 @@
         text-decoration: none;
         color: #000000;
         font-size: 1.2em;
-        
         padding: 10px 20px;
         display: block;
         transition: color 0.3s ease;
@@ -113,6 +112,23 @@
         height: 50px;
         margin-bottom: 10px;
       }
+
+      /* Styling for the header image */
+      #header img {
+        float: right;
+        width: 50%; 
+        max-width: 150px;
+        margin: 0;
+        padding: 0;
+        border-radius: 0px;
+        vertical-align: bottom;  /* Ensures the image aligns with the bottom of the text */
+      }
+
+      /* Make sure the nav is below the header */
+      #nav {
+        clear: both;  /* Ensures the nav doesn't wrap around the floated image */
+      }
+
     </style>
   </head>
   <body>
@@ -120,7 +136,9 @@
       <!-- Header -->
       <div id="header">
         <h1>Dolapo Ajiboye</h1>
-        <h1 class="italianno">Portfolio</h1>
+        <h1 class="italianno">Portfolio</h1>   
+        <!-- Add your image with float -->
+        <img src="hand.png" alt="hand">
         <div id="nav">
           <ul>
             <li><a href="#">Illustrations</a></li>
