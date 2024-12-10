@@ -38,7 +38,6 @@
         font-size: 8em;
         font-weight: 300;
         margin: 0;
-/*         border: 5px solid #000; */
       }
       
       #nav {
@@ -47,7 +46,6 @@
         margin-top: 46.5px;
       }
 
-      /* Navigation bar */
       #nav ul {
         border-top: 2px solid #000;
         border-bottom: 2px solid #000;
@@ -76,7 +74,6 @@
         color: #FDC56A;
       }
 
-      /* Introduction */
       .introduction {
         margin: 40px 0;
       }
@@ -87,21 +84,18 @@
         margin: 0 20px;
       }
 
-      /* Section titles */
       .section-title {
         font-size: 1.5em;
         margin: 30px 0 10px;
         font-weight: bold;
       }
 
-      /* Section separator */
       .separator {
         border: none;
-        border-top: 2px solid #333; /* Solid line with desired color */
-        margin: 30px 0; /* Adjust spacing above and below */
+        border-top: 2px solid #333;
+        margin: 30px 0;
       }
 
-      /* Hobbies and Contact Me sections */
       .hobbies, .contact-me {
         display: flex;
         justify-content: center;
@@ -119,8 +113,26 @@
         height: 50px;
         margin-bottom: 10px;
       }
+      
+      .contact-container a img {
+        width: 50px;
+        height: 50px;
+        transition: transform 0.2s;
+      }
 
-      /* Styling for the header image */
+      .contsct-container a img:hover {
+        transform: scale(1.2);
+      }
+      
+      .contact-container { 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        column-gap: 50px;
+        margin-top: 40px;
+        }
+     
+      
       #header img {
         float: right;
         width: 50%; 
@@ -128,20 +140,37 @@
         margin: -7.6% 24.25%;
         padding: 0;
         border-radius: 0px;
-/*         border: 5px solid #000; */
-        vertical-align: bottom;  /* Ensures the image aligns with the bottom of the text */
-        
+        vertical-align: bottom;
       }
+      
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+
+      th, td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: left;
+        background-color: #FFFFFF
+      }
+      
+      th {
+        background-color: #FDC56A;
+        color: #000
+      }
+      
+
+
 
     </style>
   </head>
   <body>
     <div class="wrapper">
-      <!-- Header -->
       <div id="header">
         <h1>Dolapo Ajiboye</h1>
         <h1 class="italianno">Portfolio</h1>   
-        <!-- Add your image with float -->
         <img src="hand.png" alt="hand">
         <div id="nav">
           <ul>
@@ -154,8 +183,7 @@
         </div>
       </div>
       
-      <!-- Introduction -->
-      <section class="introduction">
+      <div class="introduction">
         <div class="separator"></div>
         <h2>Hello!</h2>
         <p>
@@ -165,10 +193,49 @@
           Welcome to my portfolio.
         </p>
         <div class="separator"></div>
-      </section>
+      </div>
       
-      <!-- Hobbies Section -->
-      <section>
+      <div>
+        <h2 class="section-title">Skills</h2>
+        <table>
+          <tr>
+            <th>Adobe Illustrator &amp; Animate</th>
+            <th>Blender &amp; Maya</th>
+            <th>Figma</th>
+            <th>Coding</th>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <b>Logo Project</b><br>
+                - (Casey's Panda) was made through Illustrator<br>
+                <b>Character Walk Cycle</b><br>
+                - Created through sketches in Illustrator and animated in Adobe Animate<br>
+                - Made other 2D animations using the same softwear
+              </p>
+            </td>
+            <td>
+              <p>
+                <b>3D</b><br>
+                - Worked on several personal projects using Blender<br>
+                - Made a few animations in Maya
+              </p>
+            </td>
+            <td>
+              <p>
+                <b>YAP(group app)</b><br>
+                - Designed and prototyped apps and websites
+              </p>
+            </td>
+            <td>
+              <p>
+                <b>This Website</b><br>
+                - Made using my knowledge of HTML leart in class and my free time<br>
+              </p>
+            </td>
+          </tr>
+        </table>
+        
         <h2 class="section-title">Hobbies</h2>
         <div class="hobbies">
           <div>
@@ -185,28 +252,20 @@
           </div>
         </div>
         <div class="separator"></div>
-      </section>
+      </div>
 
-      <!-- Contact Me Section -->
-      <section>
+      <div>
         <h2 class="section-title">Contact Me</h2>
-        <div class="section-separator"></div>
-        <div class="contact-me">
-          <div>
-            <img src="email.png" alt="Email">
-            <p>dajiboye@gmail.com</p>
-          </div>
-          <div>
-            <img src="instagram.png" alt="Instagram">
-            <p>oyedolapoajiboye</p>
-          </div>
-          <div>
-            <img src="linkedin.png" alt="LinkedIn">
-            <p>oyeD18</p>
-          </div>
+        <div class="contact-container">
+          <a href="mailto:dajiboye@uwaterloo.ca">
+            <img src="mail.png" alt="Email Icon">
+          </a>
+          <a href="https://www.instagram.com/oyedolapoajiboye/" target="_blank">
+            <img src="instagram.png" alt="Instagram Icon">
+          </a>
         </div>
-        <div class="section-separator"></div>
-      </section>
+        <div class="separator"></div>
+      </div>
     </div>
   </body>
 </html>
